@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	</head>
+<body>
+<script>
+	////1
+	function fib(n)
+	{
+		var a=0, b=1,c=1;
+		for(var i=0; i<n; i++)
+		{
+			//document.write(c+" ");
+			c=a+b;
+			a=b;
+			b=c;
+		}
+		return a;
+	}
+	var n=prompt("1 задание\n n=","");
+	var res=fib(n);
+	alert(res);
+	////////////2
+	var n=1000, result=0, num=0;
+	do
+	{
+		result=n/2;
+		n=result;
+		num++;
+	}
+	while(result>50)
+	console.log("Второе задание: "+num);
+</script>
+</body>
+</html>
